@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting={'ecommerce App'}/>
-      <ItemCount initial={1} stock={8} onAdd={(quantity) => console.log('Added quantity', quantity)}/>
+      <ItemListContainer />
+      {/* <ItemCount initial={1} stock={8} onAdd={(quantity) => console.log('Added quantity', quantity)}/> */}
     </div>
   )
 }
