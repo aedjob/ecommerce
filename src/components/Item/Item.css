@@ -1,0 +1,43 @@
+.ItemCard {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.ItemImg {
+    /* height: 900px; */
+}
+
+.ItemTitle {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ItemInfo {
+    height: 100px;
+}
+
+.ItemDesc {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.ItemBtn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: olive;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.ItemBtn:hover {
+    background-color: olivedrab;
+  }

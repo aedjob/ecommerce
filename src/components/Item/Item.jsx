@@ -1,5 +1,5 @@
 // Aca se hace la creacion de cards, con MAPS <li>
-// import 'Item.css'
+import './Item.css'
 
 const Item = ({id, title, description, price, pictureUrl}) => {
     return(
@@ -7,8 +7,8 @@ const Item = ({id, title, description, price, pictureUrl}) => {
             <h2 className='ItemTitle'>{title}</h2>
             <img src={pictureUrl} alt="" className='ItemImg' />
             <div className='ItemInfo'>
-                <h4>Precio: ${price}</h4>
-                <h4>{description}</h4>
+                <h4 className='ItemDesc'>Price: ${price}</h4>
+                <h4 className='ItemDesc'>{description}</h4>
             </div>
             <button className='ItemBtn'>View product</button>
         </div>
