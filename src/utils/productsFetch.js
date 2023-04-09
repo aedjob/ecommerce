@@ -12,3 +12,11 @@ export let productsFetch = () => {
         }, 2000)
     })
 }
+
+export let getProduct = (id) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 2000)
+    })
+}
