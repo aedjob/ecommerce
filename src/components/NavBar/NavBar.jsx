@@ -1,16 +1,30 @@
+import { Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return(
         <nav>
-            <h3>Ecommerce</h3>
+            <Link to ='/'>
+                <h3>Ecommerce</h3>
+            </Link>
             <div>
-                <button>Caps</button>
-                <button>Beanies</button>
-                <button>Shorts</button>
-                <button>Socks</button>
+                <Link to='/category/caps'>
+                    <button>Caps</button>
+                </Link>
+                <Link to='/category/beanies'>
+                    <button>Beanies</button>
+                </Link>
+                <Link to='/category/shorts'>
+                    <button>Shorts</button>
+                </Link>
+                <Link to='/category/socks'>
+                    <button>Socks</button>
+                </Link>
             </div>
-            <CartWidget />
+            <Link to='/cart'>
+                <CartWidget />
+            </Link>
         </nav>
     )
 }

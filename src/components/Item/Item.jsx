@@ -1,4 +1,5 @@
 // Aca se hace la creacion de cards, con MAPS <li>
+import { Link } from 'react-router-dom'
 import './Item.css'
 
 const Item = ({id, title, description, price, pictureUrl}) => {
@@ -10,7 +11,9 @@ const Item = ({id, title, description, price, pictureUrl}) => {
                 <h4 className='ItemDesc'>Price: ${price}</h4>
                 <h4 className='ItemDesc'>{description}</h4>
             </div>
-            <button className='ItemBtn'>View product</button>
+            <Link to={ `/detail/${id}` }>
+                <button className='ItemBtn'>View product</button>
+            </Link>
         </div>
     )
 }
