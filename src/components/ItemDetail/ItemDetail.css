@@ -1,0 +1,32 @@
+.ItemDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.DetailImg {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.DetailInfo {
+    width: 50%;
+}
+
+.DetailTitle {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.DetailDesc {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.ItemCount {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
